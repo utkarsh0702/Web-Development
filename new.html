@@ -1,0 +1,127 @@
+<html>
+<head>
+
+<style>
+body{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	background: url(image/bac-sign.jpg);
+	background-size: cover;
+}
+h1{
+    top: 50%;
+    left: 20%;
+    margin: 250px 30px;
+    font-size: 60px;
+    color:crimson;
+    text-decoration: underline;
+    font-family: cursive;
+}
+.box{
+	position: absolute;
+	top:50%;
+	left: 70%;
+	transform: translate(-50%, -50%);
+	width:700px;
+	padding:40px;
+	background:rgba(0,0,0,0.8);
+	box-sizing:border-box;
+	box-shadow:0 15px 25px rgba(0,0,0,0.5);
+	border-radius:10px;
+}
+.box .inputBox{
+     position: relative;   
+}    
+.box .inputBox input,
+.box .inputBox textarea{
+	width:100%;
+	padding:10px 0;
+	font-size: 16px;
+	color: #fff;	
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	border:none;
+	border-bottom: 1px solid white;
+	outline:none;
+	background: transparent;
+}
+.box .inputBox label{
+	position: absolute;
+	top:0;
+	left:0;
+	letter-spacing: 1px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label,
+.box .inputBox textarea:focus ~ label,
+.box .inputBox textarea:valid ~ label
+{
+	top: -18px;
+	left :0px;
+	color: #03a9f4;
+	font-size: 12px;
+	
+}
+.box input[type="submit"]
+{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #03a9f4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+    .box a{
+        color: yellow;
+    }
+    .box a:hover{
+        color: skyblue;
+    }
+
+</style>
+</head>
+<body>
+    <h1><b>Contact Us</b></h1>
+<div class="box">
+	<form method="post" action="contactform.php">
+	<div class="inputBox">
+		<input type="text" name="name" required=" "/>
+		<label>Name</label>
+    </div>
+        <div class="inputBox">
+		<input type="email" name="mail" required=" "/>
+		<label>Email-Id</label>
+	</div>
+    <div class="inputBox">
+		<input type="text" name="sub" required=" "/>
+		<label>Subject</label>
+	</div>
+	<div class="inputBox">
+		<textarea name="mess" cols="25" rows="5" required=" "></textarea>
+		<label>Message</label>
+	</div>
+	<input type="submit" name="submit" value="Send Email"/>
+    </form>
+</div>
+    <!--Facebook-->
+<a class="fb-ic mr-3" href="3dcube.html"><i class="fab fa-lg fa-facebook-f"></i></a>
+<!--Google +-->
+<a class="gplus-ic mr-3" role="button"><i class="fab fa-lg fa-google-plus-g"></i></a>
+<!--Linkedin-->
+<a class="li-ic mr-3" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a>
+<!--Instagram-->
+<a class="ins-ic mr-3" role="button"><i class="fab fa-lg fa-instagram"></i></a>
+<!--Github-->
+<a class="git-ic mr-3" role="button"><i class="fab fa-lg fa-github"></i></a>
+<!--Email-->
+<a class="email-ic mr-3" role="button"><i class="far fa-lg fa-envelope"></i></a>
+</body>
+</html>
