@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <style>
+            #div5{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                height: 50vh;
+                font-family:fantasy;
+                background: #000;
+            }
+            #div5 h2{
+                font-size: 6em;
+                color: #333;
+                font-weight: 500;
+            }
+            #div5 h2 span{
+                animation: animate 2.5s linear infinite;
+            }
+            #div5 h2 span:nth-child(1){
+                animation-delay: 0.3s;
+            }
+            #div5 h2 span:nth-child(2){
+                animation-delay: 0.6s;
+            }
+            #div5 h2 span:nth-child(3){
+                animation-delay: 0.9s;
+            }
+            #div5 h2 span:nth-child(4){
+                animation-delay: 1.2s;
+            }
+            #div5 h2 span:nth-child(5){
+                animation-delay: 1.5s;
+            }
+            #div5 h2 span:nth-child(6){
+                animation-delay: 1.8s;
+            }
+            #div5 h2 span:nth-child(7){
+                animation-delay: 2.1s;
+            }
+            #div5 h2 span:nth-child(8){
+                animation-delay: 2.4s;
+            }
+            @keyframes animate{
+                0%,80%{
+                    color: #333;
+                    text-shadow: none;
+                }
+                100%{
+                    color: #fff;
+                    text-shadow: 0 0 10px #fff
+                    0 0 20px #fff
+                    0 0 40px #fff
+                    0 0 80px #fff
+                    0 0 120px #fff
+                    0 0 160px #fff;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div5">
+        <h2>
+            <span>P</span>
+            <span>R</span>
+            <span>O</span>
+            <span>J</span>
+            <span>E</span>
+            <span>C</span>
+            <span>T</span>
+            <span>S</span>
+        </h2>
+        </div>
+    </body>
+</html>
